@@ -14,7 +14,11 @@ const Header = () => {
 
     return (
         <div id="header">
-        <Link to='/' id='logo'>NFT Room</Link>
+        <Link to='/pages/home'>
+          <img
+          src="docs/images/Amortize-white.png"
+          />
+        </Link>
 
         <div id="link-containers">
           <a>Start Hunting</a>
