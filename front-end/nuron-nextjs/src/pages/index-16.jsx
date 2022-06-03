@@ -46,12 +46,12 @@ const Home = () => {
             <Header />
             <main id="main-content">
                 <HeroArea data={content["hero-section"]} />
-                <CollectionArea
+                {/* <CollectionArea
                     data={{
                         ...content["collection-section"],
                         collections: collectionsData.slice(0, 4),
                     }}
-                />
+                /> */}
                 <CategoryArea data={content["category-section"]} />
                 <LiveExploreArea
                     data={{
@@ -60,27 +60,6 @@ const Home = () => {
                     }}
                 />
                 <ServiceArea data={content["service-section"]} />
-                <NewsletterArea data={content["newsletter-section"]} />
-                <NewestItmesArea
-                    data={{
-                        ...content["newest-section"],
-                        products: newestData,
-                    }}
-                />
-                <TopSellerArea
-                    data={{
-                        ...content["top-sller-section"],
-                        sellers: sellerData,
-                    }}
-                />
-                <ExploreProductArea
-                    data={{
-                        ...content["explore-product-section"],
-                        products: productData,
-                        placeBid: true,
-                    }}
-                />
-                <VideoArea data={content["video-section"]} />
             </main>
             <Footer data={content["brand-section"]} space={3} />
         </Wrapper>

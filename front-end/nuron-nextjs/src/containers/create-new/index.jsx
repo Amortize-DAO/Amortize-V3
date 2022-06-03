@@ -113,7 +113,7 @@ const CreateNewArea = ({ className, space }) => {
                                     )}
                                 </div>
 
-                                <div className="mt--100 mt_sm--30 mt_md--30 d-none d-lg-block">
+                                {/* <div className="mt--100 mt_sm--30 mt_md--30 d-none d-lg-block">
                                     <h5> Note: </h5>
                                     <span>
                                         {" "}
@@ -125,7 +125,7 @@ const CreateNewArea = ({ className, space }) => {
                                         You will receive :{" "}
                                         <strong>25.00 ETH $50,000</strong>
                                     </span>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="col-lg-7">
                                 <div className="form-wrapper-one">
@@ -136,14 +136,14 @@ const CreateNewArea = ({ className, space }) => {
                                                     htmlFor="name"
                                                     className="form-label"
                                                 >
-                                                    Product Name
+                                                    House Owner
                                                 </label>
                                                 <input
                                                     id="name"
-                                                    placeholder="e. g. `Digital Awesome Game`"
+                                                    placeholder="e. g. `Ben Affleck`"
                                                     {...register("name", {
                                                         required:
-                                                            "Name is required",
+                                                            "House Owner Name is required",
                                                     })}
                                                 />
                                                 {errors.name && (
@@ -160,17 +160,17 @@ const CreateNewArea = ({ className, space }) => {
                                                     htmlFor="Discription"
                                                     className="form-label"
                                                 >
-                                                    Discription
+                                                    House Address
                                                 </label>
                                                 <textarea
                                                     id="discription"
                                                     rows="3"
-                                                    placeholder="e. g. “After purchasing the product you can get item...”"
+                                                    placeholder="e. g. “House no. 223, queens street no. 2, Amsterdem”"
                                                     {...register(
                                                         "discription",
                                                         {
                                                             required:
-                                                                "Discription is required",
+                                                                "House Address is required",
                                                         }
                                                     )}
                                                 />
@@ -191,14 +191,98 @@ const CreateNewArea = ({ className, space }) => {
                                                     htmlFor="price"
                                                     className="form-label"
                                                 >
-                                                    Item Price in $
+                                                    Owner Phone no. 
+                                                </label>
+                                                <input
+                                                    id="phonenumber"
+                                                    placeholder="e. g. `+602 34 11234`"
+                                                    {...register("phonenumber", {
+                                                        pattern: {
+                                                            value: /^[0-9]/,
+                                                            message:
+                                                                "Please enter a number",
+                                                        },
+                                                        required:
+                                                            "Phone no. is required",
+                                                    })}
+                                                />
+                                                {errors.phonenumber && (
+                                                    <ErrorText>
+                                                        {errors.phonenumber?.message}
+                                                    </ErrorText>
+                                                )}
+                                            </div>
+                                        </div>
+
+                                        <div className="col-md-4">
+                                            <div className="input-box pb--20">
+                                                <label
+                                                    htmlFor="price"
+                                                    className="form-label"
+                                                >
+                                                    Zip code 
+                                                </label>
+                                                <input
+                                                    id="zipcode"
+                                                    placeholder="e. g. `21000`"
+                                                    {...register("zipcode", {
+                                                        pattern: {
+                                                            value: /^[0-9]/,
+                                                            message:
+                                                                "Please enter a number",
+                                                        },
+                                                        required:
+                                                            "zip code is required",
+                                                    })}
+                                                />
+                                                {errors.zipcode && (
+                                                    <ErrorText>
+                                                        {errors.zipcode?.message}   
+                                                    </ErrorText>
+                                                )}
+                                            </div>
+                                        </div>
+
+                                        <div className="col-md-4">
+                                            <div className="input-box pb--20">
+                                                <label
+                                                    htmlFor="Propertie"
+                                                    className="form-label"
+                                                >
+                                                    Estate/ City Name
+                                                </label>
+                                                <input
+                                                    id="estateandcityname"
+                                                    placeholder="e. g. `Albaney/ New York`"
+                                                    {...register("estateandcityname", {
+                                                        required:
+                                                            "Estate/City Name is required",
+                                                    })}
+                                                />
+                                                {errors.estateandcityname && (
+                                                    <ErrorText>
+                                                        {
+                                                            errors.estateandcityname?.message
+                                                        }
+                                                    </ErrorText>
+                                                )}
+                                            </div>
+                                        </div>
+
+                                        <div className="col-md-12">
+                                            <div className="input-box pb--20">
+                                                <label
+                                                    htmlFor="price"
+                                                    className="form-label"
+                                                >
+                                                    Current House Price
                                                 </label>
                                                 <input
                                                     id="price"
-                                                    placeholder="e. g. `20$`"
+                                                    placeholder="e. g. `$1,000,000`"
                                                     {...register("price", {
                                                         pattern: {
-                                                            value: /^[0-9]+$/,
+                                                            value: /^[0-9]/,
                                                             message:
                                                                 "Please enter a number",
                                                         },
@@ -214,85 +298,7 @@ const CreateNewArea = ({ className, space }) => {
                                             </div>
                                         </div>
 
-                                        <div className="col-md-4">
-                                            <div className="input-box pb--20">
-                                                <label
-                                                    htmlFor="Size"
-                                                    className="form-label"
-                                                >
-                                                    Size
-                                                </label>
-                                                <input
-                                                    id="size"
-                                                    placeholder="e. g. `Size`"
-                                                    {...register("size", {
-                                                        required:
-                                                            "Size is required",
-                                                    })}
-                                                />
-                                                {errors.size && (
-                                                    <ErrorText>
-                                                        {errors.size?.message}
-                                                    </ErrorText>
-                                                )}
-                                            </div>
-                                        </div>
-
-                                        <div className="col-md-4">
-                                            <div className="input-box pb--20">
-                                                <label
-                                                    htmlFor="Propertie"
-                                                    className="form-label"
-                                                >
-                                                    Properties
-                                                </label>
-                                                <input
-                                                    id="propertiy"
-                                                    placeholder="e. g. `Propertie`"
-                                                    {...register("propertiy", {
-                                                        required:
-                                                            "Propertiy is required",
-                                                    })}
-                                                />
-                                                {errors.propertiy && (
-                                                    <ErrorText>
-                                                        {
-                                                            errors.propertiy
-                                                                ?.message
-                                                        }
-                                                    </ErrorText>
-                                                )}
-                                            </div>
-                                        </div>
-
-                                        <div className="col-md-12">
-                                            <div className="input-box pb--20">
-                                                <label
-                                                    htmlFor="Royality"
-                                                    className="form-label"
-                                                >
-                                                    Royality
-                                                </label>
-                                                <input
-                                                    id="royality"
-                                                    placeholder="e. g. `20%`"
-                                                    {...register("royality", {
-                                                        required:
-                                                            "Royality is required",
-                                                    })}
-                                                />
-                                                {errors.royality && (
-                                                    <ErrorText>
-                                                        {
-                                                            errors.royality
-                                                                ?.message
-                                                        }
-                                                    </ErrorText>
-                                                )}
-                                            </div>
-                                        </div>
-
-                                        <div className="col-md-4 col-sm-4">
+                                        {/* <div className="col-md-4 col-sm-4">
                                             <div className="input-box pb--20 rn-check-box">
                                                 <input
                                                     className="rn-check-box-input"
@@ -338,7 +344,7 @@ const CreateNewArea = ({ className, space }) => {
                                                     Unlock Purchased
                                                 </label>
                                             </div>
-                                        </div>
+                                        </div> */}
 
                                         <div className="col-md-12 col-xl-4">
                                             <div className="input-box">
@@ -365,19 +371,6 @@ const CreateNewArea = ({ className, space }) => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="mt--100 mt_sm--30 mt_md--30 d-block d-lg-none">
-                                <h5> Note: </h5>
-                                <span>
-                                    {" "}
-                                    Service fee : <strong>2.5%</strong>{" "}
-                                </span>{" "}
-                                <br />
-                                <span>
-                                    {" "}
-                                    You will receive :{" "}
-                                    <strong>25.00 ETH $50,000</strong>
-                                </span>
                             </div>
                         </div>
                     </div>

@@ -6,13 +6,7 @@
             "headings": [
                 {
                     "id": 1,
-                    "content": "Discover Digital Art, Collect and Sell Your Specific NFTs."
-                }
-            ],
-            "texts": [
-                {
-                    "id": 1,
-                    "content": "Partner with one of the world's largest retailers to showcase your brand and products."
+                    "content": "With Amortize, you get Bitcoin today in exchange for a 5% share of the future value of your home"
                 }
             ],
             "buttons": [
@@ -30,14 +24,14 @@
             ],
             "images": [
                 {
-                    "src": "/images/slider/slider-1.png"
+                    "src": "/images/amortize-images/hero.svg"
                 }
             ]
         },
         {
             "section": "service-section",
             "section_title": {
-                "title": "Create and sell your NFTs"
+                "title": "Create, mint and sell your NFTs and real estate assets"
             },
             "items": [
                 {
@@ -93,7 +87,7 @@
         {
             "section": "live-explore-section",
             "section_title": {
-                "title": "Live Bidding"
+                "title": "Live Minting"
             }
         },
         {

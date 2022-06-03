@@ -48,28 +48,10 @@ const Home = () => {
                     }}
                 />
                 <ServiceArea data={content["service-section"]} />
-                <NewestItmesArea
-                    data={{
-                        ...content["newest-section"],
-                        products: newestData,
-                    }}
-                />
-                <TopSellerArea
-                    data={{
-                        ...content["top-sller-section"],
-                        sellers: sellerData,
-                    }}
-                />
                 <ExploreProductArea
                     data={{
                         ...content["explore-product-section"],
                         products: productData,
-                    }}
-                />
-                <CollectionArea
-                    data={{
-                        ...content["collection-section"],
-                        collections: collectionsData.slice(0, 4),
                     }}
                 />
             </main>
