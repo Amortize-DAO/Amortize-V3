@@ -49,7 +49,7 @@ const HeroArea = ({
                                 </Button>
                             ))}
                         </div>
-                        <div className="odometer-area-slide ">
+                        {/* <div className="odometer-area-slide ">
                             {items?.map((item, i) => (
                                 <FunFact
                                     data-sal-delay={400 + i * 200}
@@ -60,7 +60,7 @@ const HeroArea = ({
                                     counter={item.counter}
                                 />
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="col-lg-6 order-lg-2 order-md-1 order-sm-1 order-1">
@@ -82,7 +82,7 @@ const HeroArea = ({
                                     priority
                                 />
                             )}
-                            <div className="joined-people-wrapper">
+                            {/* <div className="joined-people-wrapper">
                                 <div className="product-share-wrapper">
                                     <div className="profile-share">
                                         {clients?.map((client) => (
@@ -124,7 +124,7 @@ const HeroArea = ({
                                         }}
                                     />
                                 )}
-                            </div>
+                            </div> */}
                         </div>
                     </Tilt>
                 </div>

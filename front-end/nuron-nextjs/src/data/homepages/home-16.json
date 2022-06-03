@@ -6,13 +6,13 @@
             "headings": [
                 {
                     "id": 1,
-                    "content": "Buy and sell <br /> digital art, <br /> <span>NFT's Collection</span>"
+                    "content": "Buy and sell <br /> digital art on<br /> <span> Amortize NFT's Collection</span>"
                 }
             ],
             "texts": [
                 {
                     "id": 1,
-                    "content": "There is enough digital artworks available online to help you put together crypto currency website."
+                    "content": "Showcase, create, sell and buy your digital art on our platform"
                 },
                 {
                     "id": 2,
@@ -22,7 +22,7 @@
             "buttons": [
                 {
                     "id": 1,
-                    "content": "Explore",
+                    "content": "Explore the acquisite ART",
                     "path": "/collection"
                 },
                 {

@@ -16,9 +16,9 @@ const AuthorProfile = ({ name, image, balance }) => (
         </div>
         <div className="au-content">
             <p className="name">{name}</p>
-            <p className="blc">
+            {/* <p className="blc">
                 Balance:<span className="value">{balance}</span>
-            </p>
+            </p> */}
         </div>
     </div>
 );
